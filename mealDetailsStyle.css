@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    /* margin-left: 20px; */
+}
+
+.meal-img{
+    height: 350px;
+    width: 350px;
+    margin-left: 20px;
+}
