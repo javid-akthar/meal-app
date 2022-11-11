@@ -2,22 +2,32 @@
     margin: 0px;
     padding:0px;
     box-sizing: border-box;
+    color: rgb(153,0,18);
 }
 
 
-.header-bar{
+.header-bar {
     width: 100%;
     height: 50px;
-    background-color: lightblue;
+    background-color: rgb(224,178,183);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 
-#meal-app-name{
+#meal-app-name {
     font-size: 33px;
     padding-left: 10px;
+    background-color: initial;
+    color: rgb(153,0,18);
+    font-weight: 500;
 }
 
 .form-favbtn-container{
     background-color: beige;
+    position: sticky;
+    top: 50px;
+    z-index: 2;
 }
 
 .search-bar-form{
@@ -44,6 +54,13 @@
     width: 30%;
     display:inline-block;
     background-color:rgb(246,88,87) !important;
+    font-size: 20px !important;
+}
+
+.favourites-icon {
+    padding: 0px 9px;
+    font-size: 22px;
+    background-color: inherit;
 }
 
 #result-name{
@@ -132,6 +149,12 @@ span{
 
 button:hover{
     transform: scale(1.02);
+    opacity:0.8;
+    cursor: pointer;
+}
+
+i:hover{
+    transform: scale(1.2);
     opacity:0.8;
     cursor: pointer;
 }

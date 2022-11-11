@@ -42,10 +42,10 @@ searchBarSubmit.addEventListener('submit', (event) =>{
         return;
     }
     console.log('val', val);
-    if(val.length == 1){
-        fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?f=", val, "")
-    }
-    if(val.length > 1){
+    // if(val.length == 1){
+    //     fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?f=", val, "")
+    // }
+    if(val.length >= 1){
         fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?s=", val, "");
     }
     event.target.value = "";
@@ -60,11 +60,11 @@ inputField.addEventListener('input', function demo(event){
         // bodyHolder.innerHTML = "";
         return;
     }
-    if(val.length == 1){
-        fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?f=", val, "");
-        localStorage.setItem('recentSearch', val);
-    }
-    if(val.length > 1){
+    // if(val.length == 1){
+    //     fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?f=", val, "");
+    //     localStorage.setItem('recentSearch', val);
+    // }
+    if(val.length >= 1){
         fetchMealWithName("https://www.themealdb.com/api/json/v1/1/search.php?s=", val, "");
         localStorage.setItem('recentSearch', val);
     }
@@ -211,7 +211,7 @@ async function moreDetails(element){
     resultName.innerHTML = "<h3>Meal Details</h3>"
     var html = "";
     html += `
-    <div class="meal-details-container" style="margin-left:20px;">
+    <div class="meal-details-container" style="margin-left:20px; color:rgb(40,44,63);">
     <h1>${element.strMeal}</h1> 
     <img class="meal-img" src="${element.strMealThumb}" alt="${element.strMeal}">  
     <table>

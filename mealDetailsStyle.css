@@ -8,5 +8,18 @@
 .meal-img{
     height: 350px;
     width: 350px;
-    margin-left: 20px;
+    margin-bottom: 11px;
+}
+
+.meal-details-flex{
+    display:flex;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    background-color: rgb(245,245,245);
+}
+
+td{
+    padding: 3px;
 }
