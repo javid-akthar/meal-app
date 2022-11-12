@@ -226,7 +226,7 @@ async function moreDetails(element){
             <td>${element.strArea}</td>
         </tr>
         <tr style="vertical-align: top;">
-            <th>strInstructions</th>
+            <th>Instructions</th>
             <td>:</td>
             <!-- replace(/[\n\r\t\s]+/g, ' ') -->
             <td>${element.strInstructions}</td>
