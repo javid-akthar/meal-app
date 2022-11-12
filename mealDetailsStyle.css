@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     box-sizing: border-box;
     /* margin-left: 20px; */
 }
 
-.meal-img{
+.meal-img {
     height: 350px;
     width: 350px;
     margin-bottom: 11px;
 }
 
-.meal-details-flex{
-    display:flex;
-    width:80%;
+.meal-details-flex {
+    display: flex;
+    width: 80%;
     justify-content: center;
     align-items: center;
-    margin:auto;
-    background-color: rgb(245,245,245);
+    margin: auto;
+    background-color: rgb(245, 245, 245);
 }
 
-td{
+td {
     padding: 3px;
 }
